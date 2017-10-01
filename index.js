@@ -71,15 +71,6 @@ for (var i = 0; i < keys.length; i++) {
 
             decimalAdded = false;
         }
-
-        // Basic functionality of the calculator is complete. But there are some problems like 
-        // 1. No two operators should be added consecutively.
-        // 2. The equation shouldn't start from an operator except minus
-        // 3. not more than 1 decimal should be there in a number
-
-        // We'll fix these issues using some simple checks
-
-        // indexOf works only in IE9+
         else if (operators.indexOf(btnVal) > -1) {
             // Operator is clicked
             // Get the last character from the equation
