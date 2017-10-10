@@ -1,6 +1,6 @@
 'use strict';
 
-const electron = require("electron");
+const electron = require('electron');
 const { ipcRenderer } = electron;
 const fs = require('fs');
 
@@ -9,7 +9,7 @@ const fs = require('fs');
 //     console.log("Clicked"); 
 // })
 
-let objKeys = JSON.parse(fs.readFileSync('keys.json', 'utf8'));
+let objKeys = JSON.parse(fs.readFileSync(`${process.resourcesPath}/keys.json`, 'utf8'));
 var input = document.querySelector('.screen');
 
 
@@ -32,7 +32,7 @@ document.onkeydown = function (event) {
            console.log(objKeys[event.keyCode]);
            input.innerHTML += objKeys[event.keyCode];
         }
-    }
+	}
 }
 
 // Get all the keys from document
