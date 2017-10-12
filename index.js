@@ -9,7 +9,8 @@ const fs = require('fs');
 //     console.log("Clicked"); 
 // })
 
-let objKeys = JSON.parse(fs.readFileSync(`${process.resourcesPath}/keys.json`, 'utf8'));
+let objKeys = JSON.parse(fs.readFileSync(`${__dirname}/resources/keys.json`, 'utf8'));
+console.log(__dirname);
 var input = document.querySelector('.screen');
 
 

@@ -5,8 +5,8 @@ const url = require("url");
 const path = require("path");
 
 // Set environment variables
-process.env.NODE_ENV = "development";
-// process.env.NODE_ENV = "production";
+// process.env.NODE_ENV = "development";
+process.env.NODE_ENV = "production";
 
 const { app, BrowserWindow, Menu, ipcMain } = electron;
 // require('electron-reload')(__dirname);
